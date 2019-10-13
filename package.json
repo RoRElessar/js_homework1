@@ -1,0 +1,19 @@
+{
+  "name": "hw_1",
+  "version": "1.0.0",
+  "description": "js_homework1",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "author": "Alexey Zakruzhetskyi",
+  "license": "MIT",
+  "dependencies": {
+    "standard": "^14.3.1"
+  },
+  "standard": {
+    "ignore": [
+      "assets/js/bootstrap/*.js"
+    ]
+  }
+}
