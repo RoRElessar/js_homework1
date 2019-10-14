@@ -378,8 +378,9 @@ section.footer-form-block {
 .footer-form button {
   width: 190px;
   height: 68px;
+  padding: 23px 6px;
   background-color: #77c344;
-  border: 1px solid #77c344;
+  border: 1px solid transparent;
   color: #fff;
   font: 20px 'Ubuntu-Medium', sans-serif;
   border-radius: 3px;
@@ -404,6 +405,80 @@ footer {
 
 .footer-navigation {
   flex-direction: row;
+  position: relative;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  margin-left: 10px;
+}
+
+.menu-separator:after {
+  content: '|';
+  color: #777;
+  position: absolute;
+  top: 18px;
+  right: -10px;
+}
+
+.social-link  {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.social-link:last-child {
+  margin-right: 0;
+}
+
+.twitter-icon {
+  color: #4cbcf6;
+}
+
+.facebook-icon {
+  color: #4a6daa;
+}
+
+.google-icon {
+  color: #e74c40;
+}
+
+@media screen and (max-width: 997px) {
+
+  footer {
+    display: block;
+  }
+
+  .footer-logo {
+    display: block;
+    margin-right: 0;
+    height: 42px;
+    text-align: center;
+  }
+
+  .footer-navigation {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .footer-navigation .nav-item {
+    margin-right: 0;
+  }
+
+  .footer-navigation .nav-item .nav-link {
+    text-align: center;
+  }
+
+  .menu-separator:after {
+    content: '';
+  }
+
+  .social-container {
+    width: 115px;
+    margin: 0 auto;
+  }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -564,34 +639,6 @@ footer {
 
 }
 
-@media screen and (max-width: 650px) {
-
-  footer {
-    display: block;
-  }
-
-  .footer-logo {
-    display: block;
-    margin-right: 0;
-    height: 42px;
-    text-align: center;
-  }
-
-  .footer-navigation {
-    display: block;
-    margin-top: 20px;
-  }
-
-  .footer-navigation .nav-item {
-    margin-right: 0;
-  }
-
-  .footer-navigation .nav-item .nav-link {
-    text-align: center;
-  }
-
-}
-
 @media screen and (max-width: 609px) {
 
   .signup-form {
@@ -668,6 +715,35 @@ footer {
 
   section.brand-block .col {
     margin-bottom: 15px !important;
+  }
+
+}
+
+@media screen and (max-height: 414px) {
+
+  .form-section {
+    padding: 0 20px;
+  }
+
+  .form-section h1 {
+    font-size: 28px;
+  }
+
+  .form-text {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .signup-form {
+    margin-top: 15px;
+  }
+
+  .signup-form label {
+    margin-bottom: 15px;
+  }
+
+  .signup-form button {
+    margin-top: 5px;
   }
 
 }

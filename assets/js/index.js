@@ -1,4 +1,4 @@
-const $ = window.$
+/* global $ */
 
 $(document).ready(function () {
   $('.navbar-toggler').click(function () {
